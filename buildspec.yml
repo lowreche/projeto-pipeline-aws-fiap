@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Iniciando instalacao..."
+  build:
+    commands:
+      - echo "Preparando artefatos..."
+artifacts:
+  files:
+    - index.html
