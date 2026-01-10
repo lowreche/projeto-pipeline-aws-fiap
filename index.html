@@ -1,9 +1,94 @@
 <!DOCTYPE html>
-<html>
-<head><title>Meu Lab AWS</title></head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS na Prática | FIAP Pós-Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #ed145b; /* Vermelho FIAP */
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-white: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border-top: 5px solid var(--primary-red);
+            max-width: 500px;
+        }
+
+        h1 {
+            color: var(--primary-red);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .status-badge {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: bold;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 1px solid #10b981;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #94a3b8;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
+
+        .tech-stack {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: var(--text-white);
+        }
+    </style>
+</head>
 <body>
-    <h1>Pipeline CI/CD Funcionando com GitHub!</h1>
-    <p>Deploy automatizado via AWS CodePipeline (CANCELADO).</p>
-    <p>Deploy automatizado via GitHub Actions Completo.</p>
+    <div class="container">
+        <div class="status-badge">● Pipeline CI/CD Ativa</div>
+        <h1>AWS na Prática</h1>
+        <p>Este deploy foi realizado via <strong>GitHub Actions</strong> diretamente para o <strong>Amazon S3</strong> em uma arquitetura serverless.</p>
+        
+        <div class="tech-stack">
+            <span>GITHUB</span> | <span>CI/CD</span> | <span>AMAZON S3</span>
+        </div>
+
+        <div class="footer">
+            Pós-Tech FIAP | DevOps e Arquitetura Cloud
+        </div>
+    </div>
 </body>
 </html>
