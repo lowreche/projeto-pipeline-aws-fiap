@@ -1,7 +1,7 @@
 # AWS na Prática: Pipeline CI/CD Serverless 🚀
 ### Pós-Tech FIAP | DevOps & Arquitetura Cloud
 
-Este repositório contém o laboratório prático para a disciplina **AWS na Prática**. O objetivo é demonstrar a implementação de uma esteira de entrega contínua (CD) utilizando serviços de nuvem e automação de infraestrutura.
+Este repositório contém o laboratório prático para a aula **AWS na Prática**. O objetivo é demonstrar a implementação de uma esteira de entrega contínua (CD) utilizando serviços de nuvem e automação de infraestrutura.
 
 ## 📋 Visão Geral
 O projeto consiste na hospedagem de um site estático no **Amazon S3**, com deploy automatizado via **GitHub Actions**. Esta arquitetura exemplifica os pilares de agilidade, confiabilidade e redução de Time-to-Market discutidos em aula.
