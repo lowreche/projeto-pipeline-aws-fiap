@@ -20,4 +20,4 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy para S3
-        run: aws s3 sync . s3://lab-pipeline-luizreche-2026 --delete --exclude ".git*""
+        run: aws s3 sync . s3://lab-pipeline-luizreche-2026 --delete --exclude ".git*"
