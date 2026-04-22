@@ -6,7 +6,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::tstluizreche2026/*"
+            "Resource": "arn:aws:s3:::fiap-10nett-2026*"
         }
     ]
 }
