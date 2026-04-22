@@ -1,5 +1,5 @@
 # AWS na Prática: Pipeline CI/CD Serverless 🚀
-### Pós-Tech FIAP | DevOps & Arquitetura Cloud
+### Pós-Tech FIAP | DevOps & Arquitetura Cloud FIAP
 
 Este repositório contém o laboratório prático para a aula **AWS na Prática**. O objetivo é demonstrar a implementação de uma esteira de entrega contínua (CD) utilizando serviços de nuvem e automação de infraestrutura.
 
