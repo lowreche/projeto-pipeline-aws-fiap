@@ -1,4 +1,4 @@
-name: Deploy AWS FIAP
+name: Deploy to AWS S3
 on:
   push:
     branches:
@@ -7,17 +7,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Força o runner a usar a versão mais nova do Node para evitar o warning
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
-      - name: Checkout do Código
-        uses: actions/checkout@v3
+      - name: Checkout Código
+        uses: actions/checkout@v4
 
       - name: Configurar Credenciais AWS
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
 
-      - name: Deploy para S3
-        run: aws s3 sync . s3://lab-pipeline-luizreche-2026 --delete --exclude ".git*"
+      - name: Sincronizar S3
+        # O erro Exit Code 1 costuma ser aqui. 
+        # Verifique se o nome do bucket abaixo está IDÊNTICO ao que você criou.
+        run: aws s3 sync . s3://tstluizreche2026 --delete --exclude ".git*"
